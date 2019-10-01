@@ -65,6 +65,18 @@ void main() {
                 '8h Ago',
                 style: TextStyle(color: Colors.grey),
               )),
+          Container(
+            padding: EdgeInsets.fromLTRB(10, 0, 0, 5),
+            width: 100,
+            height: 20,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: <Widget>[
+                Icon(Icons.share),
+                Icon(Icons.bookmark_border)
+              ],
+            ),
+          ),
         ],
       ),
       Container(
@@ -119,6 +131,18 @@ void main() {
                 '12h Ago',
                 style: TextStyle(color: Colors.grey),
               )),
+          Container(
+            padding: EdgeInsets.fromLTRB(10, 0, 0, 5),
+            width: 100,
+            height: 20,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: <Widget>[
+                Icon(Icons.share),
+                Icon(Icons.bookmark_border)
+              ],
+            ),
+          ),
         ],
       ),
       Container(
@@ -173,6 +197,18 @@ void main() {
                 '19h Ago',
                 style: TextStyle(color: Colors.blue),
               )),
+          Container(
+            padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
+            width: 100,
+            height: 20,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: <Widget>[
+                Icon(Icons.share),
+                Icon(Icons.bookmark_border)
+              ],
+            ),
+          ),
         ],
       ),
       Container(
