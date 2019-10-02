@@ -29,22 +29,32 @@ void main() {
         child: Center(
             child: Text(
               ' PM Modi seeks ideas for his IIT-Madras convocation speech',
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontFamily : "PTSerif"
+              ),
             )),
       ),
       Row(
         children: <Widget>[
-          Container(
-            padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
-            width: 260,
-            child: Text(
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+              width: 260,
+              child: Text(
                 "In Chennai, PM Modi would also participate in the prize distribution ceremony of the Singapore-India Hackathon."),
           ),
-          Container(
-            child: Image(height: 100,width:100,
-              image: NetworkImage(
+          ),
+
+          Expanded(
+            flex: 1,
+            child: Container(
+              child: Image(height: 100,width:100,
+                image: NetworkImage(
                   'https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2019/09/29/Pictures/pm-narendra-modi-smart-cities-mission_ee684f10-e2a8-11e9-93be-d8edb8f85faf.jpg'),
             ),
+          ),
           )
         ],
       ),
@@ -95,21 +105,31 @@ void main() {
         child: Center(
             child: Text(
               ' Flooded Roads, Stranded Locals and Warning of More Rains',
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "PTSerif"
+              ),
             )),
       ),
       Row(
         children: <Widget>[
-          Container(
-            padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
-            width: 260,
-            child: Text(
-                "Patna Nagar Nigam personnel, donning yellow raincoats, could be seen at various spots trying to unclog the manholes that have been choked by polythene and debris."),
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+              width: 260,
+              child: Text(
+                  "Patna Nagar Nigam personnel, donning yellow raincoats, could be seen at various spots trying to unclog the manholes that have been choked by polythene and debris."),
+            ),
           ),
-          Container(
-            child: Image(height: 100,width:100,
-              image: NetworkImage(
-                  'https://images.news18.com/ibnlive/uploads/2019/09/Flood-Cartoon1.jpg'),
+
+          Expanded(
+            flex: 1,
+            child: Container(
+              child: Image(height: 100,width:100,
+                image: NetworkImage(
+                    'https://images.news18.com/ibnlive/uploads/2019/09/Flood-Cartoon1.jpg'),
+              ),
             ),
           )
         ],
@@ -161,21 +181,31 @@ void main() {
         child: Center(
             child: Text(
               'Saudi crown prince denies ordering Jamal Khashoggi killing',
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "PTSerif"
+              ),
             )),
       ),
       Row(
         children: <Widget>[
-          Container(
-            padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
-            width: 260,
-            child: Text(
-                "Some think that I should know what 3 million people working for the Saudi government do daily, says Mohammed bin Salman"),
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+              width: 260,
+              child: Text(
+                  "Some think that I should know what 3 million people working for the Saudi government do daily\", says Mohammed bin Salman"),
+            ),
           ),
-          Container(
-            child: Image(height: 100,width:100,
-              image: NetworkImage(
-                  'https://www.thehindu.com/news/national/73kpsr/article26333229.ece/ALTERNATES/FREE_460/TH22KRASALMAN'),
+
+          Expanded(
+            flex: 1,
+            child: Container(
+              child: Image(height: 100,width:100,
+                image: NetworkImage(
+                    'https://www.thehindu.com/news/national/73kpsr/article26333229.ece/ALTERNATES/FREE_460/TH22KRASALMAN'),
+              ),
             ),
           )
         ],
@@ -221,6 +251,7 @@ void main() {
 
   runApp(MaterialApp(
     home: Scaffold(
+      //resizeToAvoidBottomPadding: false,
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Center(
